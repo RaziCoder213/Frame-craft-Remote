@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webhook:start": "node --env-file=webhook/.env webhook/start.mjs",
+    "webhook:test": "node webhook/test-webhook.mjs",
+    "test": "node webhook/test-webhook.mjs"
   },
   "repository": {
     "type": "git",

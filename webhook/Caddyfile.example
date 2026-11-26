@@ -1,0 +1,5 @@
+# Replace with your public domain pointing to your always-on host.
+# Register https://receiver.example.com/webhooks/gigbotic in Gigbotic Creator Studio.
+receiver.example.com {
+    reverse_proxy /webhooks/gigbotic 127.0.0.1:3080
+}
